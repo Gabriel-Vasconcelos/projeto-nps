@@ -22,6 +22,11 @@ function calcular(){
 
     var resultado = promotores - detratores;
 
+    if(qtdDet.value == "" || qtdPas.value == "" || qtdProm.value == ""){
+        alert("Preencha todos os campos!");
+        return;
+    }
+
     if(resultado >= -100 && resultado <= -1){
         resultText.innerHTML = 'Ruim'
     } else if(resultado >= 0 && resultado <= 49){
@@ -43,9 +48,17 @@ function calcular(){
 
 
 function limpar(){
-    document.getElementById("qtd-det").value = "";
-    document.getElementById("qtd-pas").value = "";
-    document.getElementById("qtd-prom").value = "";
+    qtdDet.value = "";
+    qtdPas.value = "";
+    qtdProm.value = "";
+
+
+    resultNumber.innerHTML = "0%";
+    resultText.innerHTML = "Classificação";
+    
+    resultDetratores.innerHTML = "0%";
+    resultPassivos.innerHTML = "0%";
+    resultPromotores.innerHTML = "0%";
 }
 
 
