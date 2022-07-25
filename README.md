@@ -1,2 +1,2 @@
 # projeto-nps
-Calcula de Net Promoter Score (NPS).
+Calculadora de Net Promoter Score (NPS).
