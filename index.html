@@ -25,6 +25,7 @@
 					Passivos
 					<a href="https://marketplace.magazineluiza.com.br/nps/?partner_id=64170&gclid=CjwKCAjwrNmWBhA4EiwAHbjEQBiWb-5bQwhGBgflJ_7QulyKbCWlGJPnUx4Kd5kc6c3BFxKuCwnJlxoCSncQAvD_BwE&gclsrc=aw.ds" target="_blank" title="Passivos/neutros consiste nas pessoas que deram uma nota de 7 ou 8. Clique aqui e saiba mais.">
 						<i  class="fa fa-info-circle"></i>
+						
 					</a>
 				</label>
 				<input id="qtd-pas" type="number" placeholder="Quantidade de Passivos/neutros">
@@ -38,11 +39,11 @@
 				<input id="qtd-prom" type="number" placeholder="Quantidade de Promotores">
 			</div>
 
-			<button class="button-calc">
+			<button class="button-calc" onclick="calcular()">
 				Calcular
 			</button>
 
-			<button class="button-clear">
+			<button class="button-clear" onclick="limpar()">
 				Limpar
 			</button>
 
@@ -117,5 +118,6 @@
 	  <script>
 		new window.VLibras.Widget('https://vlibras.gov.br/app');
 	  </script>
+	  <script src="script.js"></script>
 </body>
 </html>
