@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<title>Calculadora de NPS - Net Promoter Score</title>
+	<meta name="description" content="Descubra quão bem sua empresa ou serviço é promovida por seus clientes calculando o Net Promoter Score (NPS).">
+</head>
+<body>
+	<main class="main container">
+		<section class="section section-input">
+			<h2 class="title">
+				Net Promoter Score
+			</h2>
+
+			<div class="input-group">
+				<label for="qtd-det">
+					Detratores 
+					<a href="https://marketplace.magazineluiza.com.br/nps/?partner_id=64170&gclid=CjwKCAjwrNmWBhA4EiwAHbjEQBiWb-5bQwhGBgflJ_7QulyKbCWlGJPnUx4Kd5kc6c3BFxKuCwnJlxoCSncQAvD_BwE&gclsrc=aw.ds" target="_blank" title="Detratores consiste nas pessoas que deram uma nota entre 0 e 6. Clique aqui e saiba mais.">
+						<i class="fa fa-info-circle"></i>
+					</a>
+				</label>
+				<input id="qtd-det" type="number" placeholder="Quantidade de Detratores">
+
+				<label for="qtd-pas">
+					Passivos
+					<a href="https://marketplace.magazineluiza.com.br/nps/?partner_id=64170&gclid=CjwKCAjwrNmWBhA4EiwAHbjEQBiWb-5bQwhGBgflJ_7QulyKbCWlGJPnUx4Kd5kc6c3BFxKuCwnJlxoCSncQAvD_BwE&gclsrc=aw.ds" target="_blank" title="Passivos/neutros consiste nas pessoas que deram uma nota de 7 ou 8. Clique aqui e saiba mais.">
+						<i  class="fa fa-info-circle"></i>
+					</a>
+				</label>
+				<input id="qtd-pas" type="number" placeholder="Quantidade de Passivos/neutros">
+
+				<label for="qtd-prom">
+					Promotores
+					<a href="https://marketplace.magazineluiza.com.br/nps/?partner_id=64170&gclid=CjwKCAjwrNmWBhA4EiwAHbjEQBiWb-5bQwhGBgflJ_7QulyKbCWlGJPnUx4Kd5kc6c3BFxKuCwnJlxoCSncQAvD_BwE&gclsrc=aw.ds" target="_blank" title="Promotores consiste nas pessoas que deram uma nota de 8 ou 9. Clique aqui e saiba mais.">
+						<i class="fa fa-info-circle"></i>
+					</a>
+				</label>
+				<input id="qtd-prom" type="number" placeholder="Quantidade de Promotores">
+			</div>
+
+			<button class="button-calc">
+				Calcular
+			</button>
+
+			<button class="button-clear">
+				Limpar
+			</button>
+
+		</section>
+
+		<section class="section section-output">
+			<div class="div-button">
+				<button class="button-dowload">
+					Baixar
+					<i class="fa fa-download"></i>
+				</button>
+			</div>
+
+			<h2 class="title">
+				Resultado
+			</h2>
+
+			<div class="nps-result">
+				<h3 class="result-number">
+					32%
+				</h3>
+				<span class="result-text">
+					Razoável
+				</span>
+			</div>
+
+			<div class="nps-calc">
+				<h4> 
+					Detratores: <span id="detratores">X%</span> 
+				</h4>
+
+				<h4> 
+					Passivos: <span id="passivos">Y%</span> 
+				</h4>
+
+				<h4> 
+					Promotores: <span id="promotores">Z%</span> 
+				</h4>
+
+			</div>
+
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<p>
+			Desenvolvido com 
+			<a href="https://digitalcollege.com.br/" target="_blank">
+				<i class="fa fa-heart"></i>
+			</a>
+			por <a href="#">Bruno</a>, 
+			<a href="https://github.com/gabriel-vasconcelos" target="_blank">Gabriel</a>, 
+			<a href="#">Joseph</a>, 
+			<a href="https://github.com/yanfelipe9" target="_blank">Yan</a>.
+		</p>
+	</footer>
+
+
+
+	<!-- 
+		VLibras  
+		https://vlibras.gov.br/doc/widget/installation/webpageintegration.html?_ga=2.209934613.1835861557.1658723826-832261530.1658723825
+	-->
+	<div vw class="enabled">
+		<div vw-access-button class="active"></div>
+		<div vw-plugin-wrapper>
+		  <div class="vw-plugin-top-wrapper"></div>
+		</div>
+	  </div>
+	  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+	  <script>
+		new window.VLibras.Widget('https://vlibras.gov.br/app');
+	  </script>
+</body>
+</html>
