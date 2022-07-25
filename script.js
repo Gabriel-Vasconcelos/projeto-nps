@@ -10,12 +10,12 @@ var resultPromotores = document.querySelector("#promotores");
 
 
 function calcular(){
-    
+
     var det = Number(qtdDet.value);
     var pas = Number(qtdPas.value);
     var prom = Number(qtdProm.value);
     var total = det + pas + prom;
-    
+
     var detratores = (det * 100) / total;
     var passivos = (pas * 100) / total;
     var promotores = (prom * 100) / total;
@@ -25,7 +25,7 @@ function calcular(){
     if(qtdDet.value == "" || qtdPas.value == "" || qtdProm.value == ""){
         alert("Preencha todos os campos!");
         return;
-    }
+    } 
 
     if(resultado >= -100 && resultado <= -1){
         resultText.innerHTML = 'Ruim'
@@ -38,12 +38,12 @@ function calcular(){
     }
 
     resultNumber.innerHTML = `${resultado.toFixed(2)}%`;
-    
+
     resultDetratores.innerHTML = `${detratores.toFixed(2)}%`;
     resultPassivos.innerHTML = `${passivos.toFixed(2)}%`;
     resultPromotores.innerHTML = `${promotores.toFixed(2)}%`;
 
-    
+
 }
 
 
@@ -55,10 +55,25 @@ function limpar(){
 
     resultNumber.innerHTML = "0%";
     resultText.innerHTML = "Classificação";
-    
+
     resultDetratores.innerHTML = "0%";
     resultPassivos.innerHTML = "0%";
     resultPromotores.innerHTML = "0%";
+}
+
+
+
+function baixar(){
+    var dados = document.querySelector('#dados').innerHTML;
+
+    var janela = window.open("", "", "width=700, height=700");
+    janela.document.write('<html> <head>')
+    janela.document.write('<title>Resultado NPS - PDF</title> </head>')
+    janela.document.write('<body>')
+    janela.document.write(dados)
+    janela.document.write('</body> </html>')
+    janela.document.close();
+    janela.print();
 }
 
 
