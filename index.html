@@ -51,38 +51,35 @@
 
 		<section class="section section-output">
 			<div class="div-button">
-				<button class="button-dowload">
+				<button class="button-dowload" onclick="baixar()">
 					Baixar
 					<i class="fa fa-download"></i>
 				</button>
 			</div>
 
-			<h2 class="title">
-				Resultado
-			</h2>
-
-			<div class="nps-result">
-				<h3 class="result-number">
-					N%
-				</h3>
-				<span class="result-text">
-					Classificação
-				</span>
-			</div>
-
-			<div class="nps-calc">
-				<h4> 
-					Detratores: <span id="detratores">X%</span> 
-				</h4>
-
-				<h4> 
-					Passivos: <span id="passivos">Y%</span> 
-				</h4>
-
-				<h4> 
-					Promotores: <span id="promotores">Z%</span> 
-				</h4>
-
+			<div id="dados">
+				<h2 class="title" id="nps-title">
+					Resultado
+				</h2>
+				<div class="nps-result">
+					<h3 class="result-number">
+						N%
+					</h3>
+					<span class="result-text">
+						Classificação
+					</span>
+				</div>
+				<div class="nps-calc">
+					<h4>
+						Detratores: <span id="detratores">X%</span>
+					</h4>
+					<h4>
+						Passivos: <span id="passivos">Y%</span>
+					</h4>
+					<h4>
+						Promotores: <span id="promotores">Z%</span>
+					</h4>
+				</div>
 			</div>
 
 		</section>
