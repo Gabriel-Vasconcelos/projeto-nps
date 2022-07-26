@@ -54,7 +54,7 @@ body{
 
 
 .section .title {
-	margin-top: 1.5rem;
+	margin-top: 1.8rem;
 
 	font-size: 2em;
 	font-weight: 500;
@@ -228,8 +228,9 @@ body{
 /* FOOTER */
 .footer{
 	display:flex;
-
 	justify-content: center;
+
+	text-align: center;
 
 	margin: 0.8rem 0;
 }
