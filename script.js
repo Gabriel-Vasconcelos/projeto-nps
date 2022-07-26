@@ -64,13 +64,23 @@ function limpar(){
 
 
 function baixar(){
-    var dados = document.querySelector('#dados').innerHTML;
+    var nps_Title = document.querySelector("#nps-title").innerHTML;
+    var nps_Result_number = document.querySelector(".result-number").innerHTML;
+    var nps_result_text = document.querySelector(".result-text").innerHTML;
+    var nps_Calc = document.querySelector(".nps-calc").innerHTML;
+    
 
     var janela = window.open("", "", "width=700, height=700");
     janela.document.write('<html> <head>')
-    janela.document.write('<title>Resultado NPS - PDF</title> </head>')
-    janela.document.write('<body>')
-    janela.document.write(dados)
+    janela.document.write('<title>Resultado NPS - Digital College</title> </head>')
+    janela.document.write('<>')
+    janela.document.write(`<h1>${nps_Title}</h1>`)	
+    janela.document.write(`<h2>${nps_Result_number}</h2>`)
+    janela.document.write(`<h2>Classificação: ${nps_result_text}</h2> <p>(Ruim: entre -100 e -1) (Razoável: entre 0 e 49) (Muito bom: entre 50 e 74) (Excelente: entre 75 e 100)</p> `)
+    janela.document.write(`<p>${nps_Calc}</p>`)
+    janela.document.write('<p>Detratores: consiste nas pessoas que deram uma nota entre 0 e 6.</p>')
+    janela.document.write('<p>Passivos: consiste nas pessoas que deram uma nota entre 7 e 8.</p>')
+    janela.document.write('<p>Promotores: consiste nas pessoas que deram uma nota entre 9 e 10.</p>')
     janela.document.write('</body> </html>')
     janela.document.close();
     janela.print();
