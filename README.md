@@ -9,6 +9,9 @@ A avaliação do NPS é feita a partir das respostas sobre essa pergunta, classi
 - Neutros: São os cliente que dão nota 7 ou 8. Não são entusiasmados e procuram a empresa apenas quando necessitam, logo, não são clientes fiéis.
 - Detratores: São os clientes que atribuem uma nota de 0 a 6. Geralmente são clientes que não ficaram satisfeitos com a marca, expondo feedbacks negativos em público e provavelmente não voltarão a comprar com a empresa.
 
+## :octocat: Acesse ao GitHub Pages do Projeto
+
+Você pode acessar o site do projeto clicando [aqui](https://gabriel-vasconcelos.github.io/projeto-nps/)
 
 ## :camera: Imagens do Projeto 
 
