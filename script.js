@@ -11,7 +11,8 @@ var resultPromotores = document.querySelector("#promotores");
 function verificaCampos(){
     if(qtdDet.value == "" || qtdPas.value == "" || qtdProm.value == ""){
         alert("Preencha todos os campos!");
-        return breake;
+        
+        return error;
     } 
 }
 

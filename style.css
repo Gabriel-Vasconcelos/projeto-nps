@@ -33,7 +33,7 @@ body{
 
 .section {
 	width: 450px;
-	height: 570px;
+	min-height: 600px;
 
 	display: flex;
 	flex-direction: column;
@@ -42,6 +42,7 @@ body{
 
 	margin: 2rem 0;
 	padding: 0 1.5rem;
+	padding-bottom: 38px;
 
 	border-radius: 16px;
 
@@ -54,7 +55,7 @@ body{
 
 
 .section .title {
-	margin-top: 1.8rem;
+	margin-top: 38px;
 
 	font-size: 2em;
 	font-weight: 500;
@@ -126,7 +127,7 @@ body{
 }
 
 .section-input .button-calc:hover {
-	background-color: var(--secondary-dc)
+	background-color: var(--secondary-dc);
 }
 
 .section-input .button-clear{
@@ -232,7 +233,7 @@ body{
 
 	text-align: center;
 
-	margin: 16px 0;
+	margin: 20px
 }
 
 .footer p, .footer a{
